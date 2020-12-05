@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.248.101:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+### 自定义属性
+user:
+  name: nacos-config-sample
+  age: 90
+
